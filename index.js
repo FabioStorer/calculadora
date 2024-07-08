@@ -16,6 +16,10 @@ console.log(`Escolha entre uma das opções abaixo:\n`,
     6 + '.', 'Finalizar.');
 let opcao = Number(prompt());
 
+if (isNaN(opcao)) {
+    console.log('Opção inválida.');
+}
+
 while (true) {
     if (!opcao) {
         console.log(`Escolha uma nova opção:\n`,
